@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: vless
+    env: docker
+    image: build
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    ports:
+      - port: 10086
+        protocol: tcp

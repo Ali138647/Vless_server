@@ -1,0 +1,23 @@
+{
+  "inbounds": [{
+    "port": 10086,
+    "protocol": "vless",
+    "settings": {
+      "clients": [
+        {
+          "id": "4d5a0155-4a62-4fcf-8021-68c5d300621c",
+          "level": 0,
+          "email": "test@vpn.com"
+        }
+      ],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/ray"
+      }
+    }
+  }],
+  "outbounds": [{ "protocol": "freedom" }]
+}
